@@ -1,4 +1,4 @@
-serviceName:      REPLACE_ME_APP_NAME
+serviceName:      test-vertx-grpc
 
 grpc:
   port:           8080

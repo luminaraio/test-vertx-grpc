@@ -6,16 +6,16 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.luminara.REPLACE_ME_APP_NAME</groupId>
+    <groupId>io.luminara.test-vertx-grpc</groupId>
     <artifactId>parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <groupId>io.luminara.REPLACE_ME_APP_NAME</groupId>
+  <groupId>io.luminara.test-vertx-grpc</groupId>
   <artifactId>service</artifactId>
   <version>${parent.version}</version>
 
-  <name>Luminara - EC - REPLACE_ME_APP_NAME gRPC Service</name>
+  <name>Luminara - EC - test-vertx-grpc gRPC Service</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,7 +26,7 @@
   <dependencies>
     <!-- Luminara - EC - dependencies-->
     <dependency>
-      <groupId>io.luminara.REPLACE_ME_APP_NAME</groupId>
+      <groupId>io.luminara.test-vertx-grpc</groupId>
       <artifactId>api</artifactId>
       <version>${parent.version}</version>
     </dependency>

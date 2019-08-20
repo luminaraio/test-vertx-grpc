@@ -11,11 +11,11 @@
     <version>0.0.1</version>
   </parent>
 
-  <groupId>io.luminara.REPLACE_ME_APP_NAME</groupId>
+  <groupId>io.luminara.test-vertx-grpc</groupId>
   <artifactId>parent</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>Luminara - EC - REPLACE_ME_APP_NAME gRPC parent POM</name>
+  <name>Luminara - EC - test-vertx-grpc gRPC parent POM</name>
   <packaging>pom</packaging>
 
   <modules>
