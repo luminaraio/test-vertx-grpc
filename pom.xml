@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>io.luminara</groupId>
+    <artifactId>ec-vertx-parent</artifactId>
+    <version>0.0.1</version>
+  </parent>
+
+  <groupId>io.luminara.REPLACE_ME_APP_NAME</groupId>
+  <artifactId>parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>Luminara - EC - REPLACE_ME_APP_NAME gRPC parent POM</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>api</module>
+    <module>service</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <!-- Vert.x gRPC -->
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-grpc</artifactId>
+      <version>${vertx.version}</version>
+    </dependency>
+  </dependencies>
+
+</project>

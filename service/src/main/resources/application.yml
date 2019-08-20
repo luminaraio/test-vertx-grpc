@@ -1,0 +1,4 @@
+serviceName:      REPLACE_ME_APP_NAME
+
+grpc:
+  port:           8080
