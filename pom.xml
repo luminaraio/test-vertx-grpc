@@ -13,7 +13,7 @@
 
   <groupId>com.efficientcapital.test-vertx-grpc</groupId>
   <artifactId>parent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2</version>
   <name>Efficient Capital - test-vertx-grpc gRPC parent POM</name>
   <packaging>pom</packaging>
 
