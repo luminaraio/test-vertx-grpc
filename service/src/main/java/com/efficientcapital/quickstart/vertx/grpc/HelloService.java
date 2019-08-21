@@ -1,8 +1,8 @@
-package io.luminara.quickstart.vertx.grpc;
+package com.efficientcapital.quickstart.vertx.grpc;
 
-import io.luminara.quickstart.vertx.GreeterGrpc;
-import io.luminara.quickstart.vertx.HelloReply;
-import io.luminara.quickstart.vertx.HelloRequest;
+import com.efficientcapital.quickstart.vertx.HelloReply;
+import com.efficientcapital.quickstart.vertx.HelloRequest;
+import com.efficientcapital.quickstart.vertx.GreeterGrpc;
 import io.vertx.core.Future;
 
 /**

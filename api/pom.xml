@@ -6,16 +6,16 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.luminara.test-vertx-grpc</groupId>
+    <groupId>com.efficientcapital.test-vertx-grpc</groupId>
     <artifactId>parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
   </parent>
 
-  <groupId>io.luminara.test-vertx-grpc</groupId>
+  <groupId>com.efficientcapital.test-vertx-grpc</groupId>
   <artifactId>api</artifactId>
   <version>${parent.version}</version>
 
-  <name>Luminara - EC - test-vertx-grpc gRPC API</name>
+  <name>Efficient Capital - test-vertx-grpc gRPC API</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,8 +29,6 @@
 
     <!-- Others -->
     <javax.annotation.version>1.3.2</javax.annotation.version>
-
-    <!-- Luminara - EC - dependencies-->
   </properties>
 
   <dependencies>

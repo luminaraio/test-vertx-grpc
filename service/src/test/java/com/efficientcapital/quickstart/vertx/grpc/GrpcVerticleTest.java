@@ -1,9 +1,9 @@
-package io.luminara.quickstart.vertx.grpc;
+package com.efficientcapital.quickstart.vertx.grpc;
 
+import com.efficientcapital.quickstart.vertx.HelloReply;
+import com.efficientcapital.quickstart.vertx.HelloRequest;
 import io.grpc.ManagedChannel;
-import io.luminara.quickstart.vertx.GreeterGrpc;
-import io.luminara.quickstart.vertx.HelloReply;
-import io.luminara.quickstart.vertx.HelloRequest;
+import com.efficientcapital.quickstart.vertx.GreeterGrpc;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Future;
 import io.vertx.core.Vertx;
@@ -12,6 +12,8 @@ import io.vertx.grpc.VertxChannelBuilder;
 import io.vertx.junit5.Timeout;
 import io.vertx.junit5.VertxExtension;
 import io.vertx.junit5.VertxTestContext;
+import io.vertx.servicediscovery.ServiceDiscovery;
+import io.vertx.servicediscovery.ServiceDiscoveryOptions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -38,11 +40,13 @@ public class GrpcVerticleTest {
   void setup(Vertx vertx, VertxTestContext testContext) throws IOException {
     port = generatePortNumber();
     JsonObject config = buildBaseServerConfig(port);
+    ServiceDiscovery discovery = ServiceDiscovery.create(
+      vertx, new ServiceDiscoveryOptions().setBackendConfiguration(config));
 
-    vertx.deployVerticle(new GrpcVerticle(List.of(new GreeterGrpc.GreeterVertxImplBase() {
+    vertx.deployVerticle(new GrpcVerticle(discovery, List.of(new GreeterGrpc.GreeterVertxImplBase() {
         @Override
-        public void sayHello(io.luminara.quickstart.vertx.HelloRequest request,
-                             Future<io.luminara.quickstart.vertx.HelloReply> response) {
+        public void sayHello(HelloRequest request,
+                             Future<HelloReply> response) {
           System.out.println("Hello " + request.getName());
           response.complete(
             HelloReply.newBuilder()

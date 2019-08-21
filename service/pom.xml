@@ -6,29 +6,42 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.luminara.test-vertx-grpc</groupId>
+    <groupId>com.efficientcapital.test-vertx-grpc</groupId>
     <artifactId>parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
   </parent>
 
-  <groupId>io.luminara.test-vertx-grpc</groupId>
+  <groupId>com.efficientcapital.test-vertx-grpc</groupId>
   <artifactId>service</artifactId>
   <version>${parent.version}</version>
 
-  <name>Luminara - EC - test-vertx-grpc gRPC Service</name>
+  <name>Efficient Capital - test-vertx-grpc gRPC Service</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <main.verticle>io.luminara.quickstart.vertx.grpc.MainVerticle</main.verticle>
+    <main.verticle>com.efficientcapital.quickstart.vertx.grpc.MainVerticle</main.verticle>
+
+    <ec-commons.version>0.0.1</ec-commons.version>
+    <ec-vertx-commons.version>0.0.1</ec-vertx-commons.version>
   </properties>
 
   <dependencies>
-    <!-- Luminara - EC - dependencies-->
+    <!-- Efficient Capital - EC - dependencies-->
     <dependency>
-      <groupId>io.luminara.test-vertx-grpc</groupId>
+      <groupId>com.efficientcapital.test-vertx-grpc</groupId>
       <artifactId>api</artifactId>
       <version>${parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.efficientcapital</groupId>
+      <artifactId>ec-commons</artifactId>
+      <version>${ec-commons.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.efficientcapital</groupId>
+      <artifactId>ec-vertx-commons</artifactId>
+      <version>${ec-vertx-commons.version}</version>
     </dependency>
   </dependencies>
 
