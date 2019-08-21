@@ -8,13 +8,12 @@
   <parent>
     <groupId>com.efficientcapital.test-vertx-grpc</groupId>
     <artifactId>parent</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
   </parent>
 
   <groupId>com.efficientcapital.test-vertx-grpc</groupId>
   <artifactId>service</artifactId>
   <version>${parent.version}</version>
-
   <name>Efficient Capital - test-vertx-grpc gRPC Service</name>
 
   <properties>
