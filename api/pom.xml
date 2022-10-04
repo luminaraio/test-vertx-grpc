@@ -20,7 +20,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- Protobuf -->
-    <protoc.version>3.9.1</protoc.version>
+    <protoc.version>3.16.3</protoc.version>
     <grpc.version>1.20.0</grpc.version>
     <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
     <proto-google-common-protos.version>1.16.0</proto-google-common-protos.version>
